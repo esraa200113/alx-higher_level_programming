@@ -1,14 +1,14 @@
 def safe_print_list(my_list=[], x=0):
+    count = 0
     try:
-        count = 0
-        for i in range(x):
-            print(my_list[i], end="")
+        while count < x:
+            print(my_list[count], end="")
             count += 1
-        print()
-        return count
     except IndexError:
+        pass
+    finally:
         print()
-        return count
+    return count
 
 # Test the function
 if __name__ == "__main__":
