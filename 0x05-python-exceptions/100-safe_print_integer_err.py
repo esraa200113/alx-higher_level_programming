@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+import sys
+
 def safe_print_integer_err(value):
     try:
         print("{:d}".format(value))
@@ -10,8 +12,6 @@ def safe_print_integer_err(value):
 
 # Test the function
 if __name__ == "__main__":
-    import sys
-    
     value = 89
     has_been_print = safe_print_integer_err(value)
     if not has_been_print:
