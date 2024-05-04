@@ -5,6 +5,5 @@ This script prints 3 times a string stored in the variable str, followed by its 
 """
 
 str = "Holberton School"
-print(str * 3)
-print(str[:9])
+print(str * 3, str[:9], sep="\n")
 
