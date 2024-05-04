@@ -1,0 +1,8 @@
+#!/bin/bash
+
+pyfile="$PYFILE"
+pyfilec="${pyfile%.*}.pyc"
+
+echo "Compiling $pyfile ..."
+python3 -m py_compile "$pyfile"
+
